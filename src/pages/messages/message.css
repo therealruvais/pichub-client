@@ -1,0 +1,213 @@
+.messageSection {
+  display: flex;
+  gap: 1rem;
+  width: 92vw;
+  height: 100vh;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  margin-left: 8.7%;
+}
+.messsageCon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.Mesleft {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Meshead {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #9999;
+  padding: 10px;
+}
+
+.Meshead >h3{
+  font-size: 30;
+}
+
+.Mesusers {
+  height: 90%;
+}
+
+.muserim {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+.muserim > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.usersNames{
+  font-size: 26px;
+  margin-top: 9px;
+}
+
+.Mesright {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-left: 1px solid #9999;
+  flex-direction: column;
+}
+
+.Mesrhead {
+  height: 10%;
+  border-bottom: 1px solid #9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mbodyuserim {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.mbodyuserim > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.clearMsg{
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.Msbody {
+  min-height: 80%;
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+}
+
+.userSec {
+  background: var(--color-light);
+  padding: 0.7rem;
+  border-radius: 1rem 1rem 1rem 0;
+  max-width: 28rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.userSec > span:nth-child(2) {
+  font-size: 0.7rem;
+  color: var(--color-dark);
+  align-self: end;
+}
+
+.own {
+  align-self: flex-end;
+  border-radius: 1rem 1rem 0 1rem;
+  background: var(--color-blue);
+  color: white;
+}
+
+.own > span:nth-child(2) {
+  font-size: 0.7rem;
+  color: var(--color-light);
+  align-self: end;
+}
+
+.MsInput {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.MsInput > p {
+  color: var(--color-blue);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.online {
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 3rem;
+  top: .3rem;
+}
+
+.chatbox{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatImg{
+width: 200px;
+height: 200px;
+color: var(--color-dark);
+}
+
+@media screen and (max-width:768px) {
+  .messageSection{
+    width: 100%;
+    height: 100vh;
+    margin-left: 2rem;
+  }
+ 
+  .Mesleft{
+    width: 25vw;
+    height: 100vh;
+  } 
+  .edit-i{
+    display: none;
+  }
+  .muserim > img{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .usersNames{
+    font-size: 15px;
+  }
+  .onof{
+    font-size: 12px;
+  }
+  .Mesright {
+    width: 45vw;
+    height: 95vh;
+  }
+  .Mesrhead{
+    font-size: 14px;
+  }
+  .mbodyuserim > img{
+    width: 2rem;
+    height: 2rem;
+  }
+  .Msbody{
+    width: 100%;
+    font-size: 14px;
+  }
+  .chatImg>img{
+    width: 200px;
+    height: 200px;
+  }
+}

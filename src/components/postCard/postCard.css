@@ -1,0 +1,48 @@
+.postC {
+  width: 100%;
+  height: 40vh;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navLink {
+  padding: 2.8px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--color-black);
+  transition: color 0.3s ease-out;
+  cursor: pointer;
+}
+.navLink.active {
+  color: var(--color-blue);
+  /* border-top: 1px solid var(--color-blue); */
+}
+
+.postcContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.editImgC {
+  width: 33%;
+  max-height: 21rem;
+  border: 1px solid #9999;
+}
+
+.editImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .editImgC {
+    width: 48%;
+    border: 1px solid #9999;
+  }
+}
